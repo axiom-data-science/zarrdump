@@ -6,6 +6,8 @@ LABEL org.opencontainers.image.url="https://git.axiom/axiom/zarrdump/"
 LABEL org.opencontainers.image.source="https://git.axiom/axiom/zarrdump/"
 LABEL org.opencontainers.image.licenses="MIT"
 
+RUN apt-get update && apt-get install -y build-essential && apt-get clean -y
+
 # Build the release binary
 WORKDIR /opt/zarrdump
 COPY src ./src
