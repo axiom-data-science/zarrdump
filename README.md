@@ -1,4 +1,6 @@
 ![Pipeline Status](http://git.axiom/axiom/zarrdump/badges/main/pipeline.svg)
+
+
 [![Cargo Audit](http://git.axiom/axiom/zarrdump/-/jobs/artifacts/main/raw/cargo-audit.svg?job=badger-cargo-audit)](http://git.axiom/axiom/zarrdump/-/jobs/artifacts/main/raw/cargo-audit.json?job=build_audit)
 [![Trivy](http://git.axiom/axiom/zarrdump/-/jobs/artifacts/main/raw/trivy-audit.svg?job=badger-trivy)](http://git.axiom/axiom/zarrdump/-/jobs/artifacts/main/raw/trivy-report.json?job=trivy_scan)
 
