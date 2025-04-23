@@ -39,3 +39,29 @@ To build the docker image:
 To run the image as a docker container
 
     docker run -it --rm zarrdump
+
+
+Usage
+-----
+
+```
+Dump a ZARR v2 or v3 dataset metadata as JSON
+
+Usage: zarrdump <PATH>
+
+Arguments:
+  <PATH>  File path to the zarr dataset
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version
+```
+
+Examples
+--------
+
+List all the variables in a zarr dataset:
+
+```
+zarrdump CE01ISSM-MFD35-04-ADCPTM000-daily-2025.zarr | jq '.variables | keys'
+```
