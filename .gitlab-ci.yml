@@ -66,6 +66,7 @@ build_audit:
   stage: scan
   allow_failure: true
   script:
+    - apt-get update && apt-get install -y build-essential
     - cargo install cargo-audit
     - cargo build
     - cargo audit --json > cargo-audit.json
