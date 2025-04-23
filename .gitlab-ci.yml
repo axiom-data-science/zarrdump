@@ -23,6 +23,7 @@ clippy:
   image: $RUST_IMAGE
   stage: test
   script:
+    - apt-get update && apt-get install build-essential
     - rustup component add clippy
     - cargo clippy -- -Dwarnings
 
@@ -30,6 +31,7 @@ test:
   image: $RUST_IMAGE
   stage: test
   script:
+    - apt-get update && apt-get install build-essential
     - cargo test
 
 push:
